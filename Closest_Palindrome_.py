@@ -1,4 +1,4 @@
-def palin(i):
+def fun(i):
     temp=i
     r=0
     while(i):
@@ -9,11 +9,11 @@ def palin(i):
         return 1
 n=int(input())
 for i in range(n-1,0,-1):
-    if(palin(i)):
+    if(fun(i)):
         k=i
         break
 for j in range(n+1,10000):
-    if(palin(j)):
+    if(fun(j)):
         t=j
         break
 if(t-n==(n-k)):

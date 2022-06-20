@@ -16,9 +16,9 @@ while(t):
             m+=1
     d=a[0]
     for i in range(0,m):
-        if(d>a[i]):
+        if d>a[i]:
             d=a[i]
             p=b[i]
     print(p)
     t-=1
-            
+    

@@ -1,6 +1,6 @@
 def isprime(n):
     c=0
-    for i in range (1,n+1):
+    for i in range(1,n+1):
         if n%i==0:
             c+=1
     if c==2:
@@ -8,7 +8,7 @@ def isprime(n):
     else:
         return 0
 n=int(input())
-if(isprime(n)):
+if isprime(n):
     c=0
     p=0
     while(n):

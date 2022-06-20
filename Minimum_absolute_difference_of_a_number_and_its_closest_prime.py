@@ -1,8 +1,9 @@
-n=int(input())
+
 k=0
 m=0
 a=[]
 b=[]
+n=int(input())
 for i in range(0,n+100):
     c=2
     for j in range(2,i):
@@ -14,8 +15,7 @@ for i in range(0,n+100):
         m+=1
 d=a[0]
 for i in range(0,m):
-    if(d>a[i]):
+    if d>a[i]:
         d=a[i]
         p=b[i]
 print(d)
-            

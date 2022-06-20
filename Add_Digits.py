@@ -7,10 +7,9 @@ def fun(n):
         arr.append(r)
     if(len(arr)>1):
         for i in range(len(arr)):
-            k=k+arr[i]
+            k+=arr[i]
     if(len(arr)==1):
         print(*arr)
     return fun(k)
-            
 n=int(input())
 fun(n)

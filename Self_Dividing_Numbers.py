@@ -16,6 +16,5 @@ def sd(n):
 a=int(input())
 b=int(input())
 for i in range(a,b+1):
-    if sd(i):
+    if (sd(i)):
         print(i,end=' ')
-        

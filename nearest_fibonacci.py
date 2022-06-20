@@ -15,10 +15,9 @@ def fun(n):
 n=int(input())
 p=[]
 p=fun(n)
-if(n-p[0]==p[1]-n):
+if (n-p[0]==p[1]-n):
     print(p[0],p[1])
-elif(n-p[0]>p[1]-n):
+elif (n-p[0]>p[1]-n):
     print(p[1])
-elif(n-p[0]<p[1]-n):
+else:
     print(p[0])
-    

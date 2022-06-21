@@ -9,13 +9,11 @@ while(n):
     n=n//10
     rev=rev*10+r
 while(rev):
-    d=d+1
+    d+=1
     r=rev%10
     rev=rev//10
-    s=s+pow(r,d)
-if(s==temp):
+    s+=pow(r,d)
+if s==temp:
     print('True')
 else:
     print('False')
-    
-    

@@ -9,5 +9,3 @@ for i in range(n):
         else:
             l.append(b[i][j]-a[i][j])
     print(*l)
-    
-        

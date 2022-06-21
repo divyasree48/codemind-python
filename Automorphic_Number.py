@@ -11,4 +11,4 @@ s=sq%pw
 if(s==n):
     print('Automorphic Number')
 else:
-    print("Not an Automorphic Number")
+    print('Not an Automorphic Number')

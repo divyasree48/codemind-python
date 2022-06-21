@@ -7,7 +7,7 @@ if len(l)==1:
             c=1
     print(c)
 else:
-    for ch in l:
+    for ch in l: 
         c=0
         for char in ch:
             if char in 'aeiouAEIOU':

@@ -15,11 +15,11 @@ if isprime(n):
         d=n%10
         rev=(rev*10)+d
         n=n//10
-    if (isprime(rev)):
-         c+=1
+    if(isprime(rev)):
+        c+=1
     if c!=0:
-        print("circular prime")
+        print('circular prime')
     else:
-        print("prime but not a circular prime")
+        print('prime but not a circular prime')
 else:
-    print("not prime")
+    print('not prime')

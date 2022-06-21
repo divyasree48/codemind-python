@@ -6,9 +6,9 @@ def ugly(n):
     if n%2==0:
         return (ugly(n//2))
     if n%3==0:
-        return (ugly(n//3))
+        return ugly(n//3)
     if n%5==0:
-        return (ugly(n//5))
+        return ugly(n//5)
     return 0
 n=int(input())
 k=ugly(n)

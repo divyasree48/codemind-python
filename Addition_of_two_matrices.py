@@ -6,5 +6,3 @@ for i in range(n):
     for j in range(n):
         l.append(a[i][j]+b[i][j])
     print(*l)
-    
-        

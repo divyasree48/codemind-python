@@ -7,3 +7,4 @@ for i in range(len(s)):
         break
 else:
     print('False')
+        

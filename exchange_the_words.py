@@ -1,4 +1,4 @@
-n=input()
-k=n.split()
+s=input()
+k=s.split()
 c=' '.join(reversed(k))
 print(c)

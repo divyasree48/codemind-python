@@ -1,12 +1,11 @@
-s=input()
-l=list(s.lower())
-l1=[]
-k=''
-for i in l:
+s=input().lower()
+l=[]
+s1=''
+for i in s:
     if i==' ':
         continue
-    if l.count(i)==1:
-        l1.append(i)
-for i in sorted(l1):
-    k=k+i
-print(k)
+    if i not in l:
+        l.append(i)
+for i in sorted(l):
+    s1+=i
+print(s1)

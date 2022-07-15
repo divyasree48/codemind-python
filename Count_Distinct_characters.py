@@ -1,9 +1,7 @@
-s=input()
-l=list(s.lower())
-l1=[]
-for i in l:
-    if i==' ':
-        continue
-    if i not in l1:
-        l1.append(i)
-print(len(l1))
+s=input().lower()
+l=list(s.split(' '))
+s1=set(s)
+if len(l)>1:
+    print(len(s1)-1)
+else:
+    print(len(s1))

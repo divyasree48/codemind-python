@@ -1,9 +1,8 @@
-s=input()
-l=list(s.lower())
+s=input().lower()
 c=0
-for i in l:
+for i in s:
     if i==' ':
         continue
-    if l.count(i)==1:
+    if s.count(i)==1:
         c+=1
 print(c)

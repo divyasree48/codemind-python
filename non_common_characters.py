@@ -5,14 +5,15 @@ for i in s2:
     if i==' ':
         continue
     if i not in s1:
-        l.append(i)
+        if i not in l:
+            l.append(i)
 for i in s1:
     if i==' ':
         continue
     if i not in s2:
-        l.append(i)
-l=sorted(set(l))
-k=''
-for i in l:
-    k+=i
-print(k)
+        if i not in l:
+            l.append(i)
+s=''
+for i in sorted(l):
+    s+=i
+print(s)

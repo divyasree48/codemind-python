@@ -1,13 +1,11 @@
-s=input()
-l=list(s.lower())
-l1=[]
-for i in l:
-    if i==' ':
-        continue
-    if l.count(i)==1:
-        l1.append(i)
-'''print(l1)'''
-if(len(l1)==0):
+s=input().lower()
+c=0
+for i in s:
+    if s.count(i)==1:
+        k=i
+        c+=1
+        break
+if c==0:
     print(-1)
 else:
-    print(l1[0])
+    print(k)

@@ -1,4 +1,4 @@
 s=input()
-l=s.split(' ')
+l=list(s.split(' '))
 for i in l:
     print(len(i),end=' ')

@@ -14,4 +14,4 @@ for i in range(len(l)):
             s1+=k[::-1]
         else:
             s1+=l[i]
-print(s1)
+print(s1)        

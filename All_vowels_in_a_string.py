@@ -2,8 +2,6 @@ s=input()
 v='aeiou'
 l=[]
 for i in s:
-    if i==' ':
-        continue
     if i in v:
         l.append(i)
 c=0

@@ -1,0 +1,10 @@
+t=int(input())
+while(t):
+    n=int(input())
+    b=''
+    while(n):
+        r=n%2
+        b=b+str(r)
+        n=n//2
+    print(b[::-1])
+    t-=1

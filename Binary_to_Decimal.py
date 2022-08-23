@@ -1,0 +1,11 @@
+t=int(input())
+while(t):
+    n=int(input())
+    d=i=0
+    while(n):
+        r=n%10
+        d+=r*(2**i)
+        i+=1
+        n=n//10
+    print(d)
+    t-=1

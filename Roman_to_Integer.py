@@ -1,34 +1,37 @@
-def fun(k):
-    if k=='I':
-        return 1
-    if k=='V':
-        return 5
-    if k=='X':
-        return 10
-    if k=='L':
-        return 50
-    if k=='C':
-        return 100
-    if k=='D':
-        return 500
-    if k=='M':
-        return 1000
-    return -1
-def roman(s):
-    res=i=0
-    while(i<len(s)):
-        s1=fun(s[i])
-        if(i+1<len(s)):
-            s2=fun(s[i+1])
-            if s1>=s2:
-                res=res+s1
-                i=i+1
-            else:
-                res=res+s2-s1
-                i=i+2
-        else:
-            res+=s1
-            i+=1
-    return res
 s=input()
-print(roman(s))
+c=0
+for i in range(len(s)):
+    if s[i]=='I':
+        c+=1
+    elif s[i]=='V':
+        if s[i-1]=='I' and i>0:
+            c+=3
+        else:
+            c+=5
+    elif s[i]=='X':
+        if s[i-1]=='I' and i>0:
+            c+=8
+        else:
+            c+=10
+    elif s[i]=='L':
+        if s[i-1]=='X' and i>0:
+            c+=30
+        else:
+            c+=50
+    elif s[i]=='C':
+        if s[i-1]=='X' and i>0:
+            c+=80
+        else:
+            c+=100
+    elif s[i]=='D':
+        if s[i-1]=='C' and i>0:
+            c+=300
+        else:
+            c+=500
+    elif s[i]=='M':
+        if s[i-1]=='C' and i>0:
+            c+=800
+        else:
+            c+=1000
+print(c)
+        

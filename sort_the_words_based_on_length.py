@@ -1,4 +1,4 @@
-s=input().split()
-s=sorted(s)
-s.sort(key=len)
-print(*s)
+s=input().split(' ')
+k=sorted(s)
+k.sort(key=len)
+print(*k)

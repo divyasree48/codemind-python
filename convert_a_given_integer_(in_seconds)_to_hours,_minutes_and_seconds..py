@@ -1,0 +1,9 @@
+n=int(input())
+a=n//3600
+b=n%3600
+c=b//60
+d=b%60
+print("H:M:S",end="-")
+print(a,end=":")
+print(c,end=":")
+print(d)

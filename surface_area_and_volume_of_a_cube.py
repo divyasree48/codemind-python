@@ -1,0 +1,5 @@
+n=int(input())
+print("Surface area ",end="= ")
+print(6*n*n,end=" ")
+print("and Volume ",end="= ")
+print(n*n*n)

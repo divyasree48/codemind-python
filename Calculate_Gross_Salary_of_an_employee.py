@@ -1,0 +1,19 @@
+a=float(input())
+b=float(input())
+c=float(input())
+d=(12*a)/100
+e=a+b+c+d
+f=str(d)
+g=str(e)
+h,i=f.split('.')
+j,k=g.split('.')
+i=str(i)
+k=str(k)
+while(len(i)<2):
+    i=i+'0'
+while(len(k)<2):
+    k=k+'0'
+print(h,end=".")
+print(i)
+print(j,end=".")
+print(k)

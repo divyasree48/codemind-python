@@ -1,0 +1,11 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=((a+b)*c)/2
+e=str(d)
+f,g=e.split('.')
+h=str(g)
+while(len(h)<4):
+    h=h+'0'
+print(f,end='.')
+print(h)

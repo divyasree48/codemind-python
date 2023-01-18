@@ -1,0 +1,37 @@
+a=int(input())
+b=str(3.14*a*a)
+c=str(2*3.14*a)
+d,e=b.split('.')
+f,g=c.split('.')
+e=str(e)
+g=str(g)
+if(len(e)>=2):
+    #print(e)
+    j=str(round(float(b),2))
+    l,m=j.split('.')
+    m=str(m)
+    if(len(m)<2):
+        m=m+'0'
+    
+    e=m
+    #print(h)
+else:
+    while(len(e)<2):
+        e=e+'0'
+if(len(g)>=2):
+    #print(g)
+    k=str(round(float(c),2))
+    n,o=k.split('.')
+    o=str(o)
+    while(len(o)<2):
+        o=o+'0'
+    
+    g=o
+    #print(i)
+else:
+    while(len(g)<2):
+        g=g+'0'
+print(d,end='.')
+print(e)
+print(f,end='.')
+print(g)

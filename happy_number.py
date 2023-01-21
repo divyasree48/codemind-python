@@ -1,15 +1,13 @@
-def ishappy(res):
-    sum=rem=0
-    while res>0:
-        rem=res%10
-        sum+=(rem*rem)
-        res=res//10
-    return sum
 n=int(input())
-res=n
-while(res!=1 and res!=4):
-    res=ishappy(res)
-if(res==1):
+s=0
+while(s!=1 and s!=4):
+    s=0
+    while(n):
+        r=n%10
+        s+=r*r
+        n//=10
+    n=s
+if s==1 or s==7:
     print('True')
 else:
     print('False')

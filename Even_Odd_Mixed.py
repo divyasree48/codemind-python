@@ -1,18 +1,16 @@
 n=int(input())
-e=0
-o=0
-n1=0
+a=b=c=0
 while(n):
+    c+=1
     r=n%10
     n=n//10
-    n1+=1
-    if(r%2==0):
-        e+=1
+    if r%2==0:
+        a+=1
     else:
-        o+=1
-if(n1==e):
-     print('Even')
-elif(n1==o):
+        b+=1
+if a==c:
+    print('Even')
+elif b==c:
     print('Odd')
 else:
     print('Mixed')

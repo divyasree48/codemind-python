@@ -1,11 +1,12 @@
-
 n=int(input())
 s=0
 p=1
 while(n):
-    d=n%10
-    s=s+d
-    p=p*d
+    r=n%10
+    s+=r
+    p*=r
     n=n//10
-
-print(p-s)
+if p>s:
+    print(p-s)
+else:
+    print(s-p)

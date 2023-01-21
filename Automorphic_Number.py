@@ -1,14 +1,10 @@
 import math
 n=int(input())
-t=n
-sq=n*n
-dc=0
-while(t):
-    t=t//10
-    dc+=1
-pw=pow(10,dc)
-s=sq%pw
-if(s==n):
+a=n*n
+b=len(str(n))
+r=n%(pow(10,b))
+p=a%(pow(10,b))
+if r==p:
     print('Automorphic Number')
 else:
     print('Not an Automorphic Number')

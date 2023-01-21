@@ -1,13 +1,19 @@
-import math
 n=int(input())
-s=0
-temp=n
-k=abs(n)
-while(k):
-    r=k%10
-    k=k//10
-    s=s*10+r
-if(temp<0):
-    print(-s)
+if n<0:
+    f=1
+    n*=-1
 else:
-    print(s)
+    f=0
+a=str(n)
+b=a[::-1]
+if f==1:
+    b='-'+b
+c=''
+for i in range(len(b)):
+    if i==0 and b[i]=='0':
+        continue
+    if i==1 and b[i]=='0':
+        continue
+    else:
+        c+=b[i]
+print(c)

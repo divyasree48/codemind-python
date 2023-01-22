@@ -1,8 +1,8 @@
 n=int(input())
-arr=list(map(int,input().split()))
-l=[]
-for i in range(len(arr)):
-    if arr.count(arr[i])==arr[i]:
-        if arr[i] not in l:
-            l.append(arr[i])
-print(len(l))
+l=list(map(int,input().split()))
+s=set(l)
+c=0
+for i in s:
+    if l.count(i)==i:
+        c+=1
+print(c)

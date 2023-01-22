@@ -1,10 +1,8 @@
 n=int(input())
-arr=list(map(int,input().split()))
-s1=0
-s2=0
+l=list(map(int,input().split()))
+
+f=g=0
 for i in range(n):
-    if(i%2==0):
-        s1+=arr[i]
-    else:
-        s2+=arr[i]
-print(s2)
+    if i%2==1:
+        f+=l[i]
+print(f)

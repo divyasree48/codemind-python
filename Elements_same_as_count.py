@@ -1,11 +1,13 @@
 n=int(input())
-arr=list(map(int,input().split()))
-l=[]
-for i in range(len(arr)):
-    if arr.count(arr[i])==arr[i]:
-        if arr[i] not in l:
-            l.append(arr[i])
-if(len(l)>0):
-    print(*l)
-else:
+l=list(map(int,input().split()))
+
+a=[]
+for i in l:
+    if i not in a:
+        if l.count(i)==i:
+            a.append(i)
+if len(a)==0:
     print(-1)
+else:
+    for i in a:
+        print(i,end=' ')

@@ -1,3 +1,4 @@
 n=int(input())
-arr=list(map(int,input().split()))
-print("%.2f"%(sum(arr)/len(arr)))
+l=list(map(int,input().split()))
+a=(sum(l)/len(l))
+print("%.2f"%a)

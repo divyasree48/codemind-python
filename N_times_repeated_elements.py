@@ -1,12 +1,13 @@
 n=int(input())
-arr=list(map(int,input().split()))
+l=list(map(int,input().split()))
 k=int(input())
-l=[]
-for i in range(len(arr)):
-    if arr.count(arr[i])==k:
-        if arr[i] not in l:
-            l.append(arr[i])
-if(len(l)>0):
-    print(*l)
-else:
+s=set(l)
+a=[]
+for i in s:
+    if l.count(i)==k:
+        a.append(i)
+if len(a)==0:
     print(-1)
+else:
+    for i in a:
+        print(i,end=' ')

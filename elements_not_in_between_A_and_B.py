@@ -1,10 +1,12 @@
 n=int(input())
-arr=list(map(int,input().split()))
+l=list(map(int,input().split()))
 a,b=map(int,input().split())
-k=0
-for i in range(len(arr)):
-    if arr[i]<a or arr[i]>b:
-        k+=1
-        print(arr[i],end=' ')
-if(k==0):
+c=[]
+for i in l:
+    if i<a or i>b:
+        c.append(i)
+if len(c)==0:
     print(-1)
+else:
+    for i in c:
+        print(i,end=' ')

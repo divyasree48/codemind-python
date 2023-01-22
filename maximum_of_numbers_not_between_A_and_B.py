@@ -1,11 +1,11 @@
 n=int(input())
-arr=list(map(int,input().split()))
+l=list(map(int,input().split()))
 a,b=map(int,input().split())
-l=[]
-for i in range(len(arr)):
-    if arr[i]<a or arr[i]>b:
-        l.append(arr[i])
-if len(l)>0:
-    print(max(l))
-else:
+c=[]
+for i in l:
+    if i<a or i>b:
+        c.append(i)
+if len(c)==0:
     print(-1)
+else:
+    print(max(c))

@@ -1,8 +1,9 @@
+import math
 n=int(input())
-arr=list(map(int,input().split()))
-k=sum(arr)//len(arr)
+l=list(map(int,input().split()))
+a=math.floor(sum(l)/len(l))
 c=0
-for i in range(len(arr)):
-    if(arr[i]<=k):
+for i in l:
+    if i<=a:
         c+=1
 print(c)

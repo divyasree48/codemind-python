@@ -1,9 +1,11 @@
 n=int(input())
-arr=list(map(int,input().split()))
+l=list(map(int,input().split()))
 a,b=map(int,input().split())
-d=0
-for i in range(len(arr)):
-    if arr[i]<a or arr[i]>b:
-        d+=arr[i]
-print(d)
-        
+c=[]
+for i in l:
+    if i<a or i>b:
+        c.append(i)
+if len(c)==0:
+    print(0)
+else:
+    print(sum(c))

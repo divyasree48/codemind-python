@@ -1,7 +1,12 @@
 n=int(input())
-arr=list(map(int,input().split()))
+l=list(map(int,input().split()))
 k=int(input())
-if k in arr:
+f=g=0
+for i in range(n):
+    if l[i]==k:
+        f+=1
+        break
+if f==1:
     print('True')
 else:
     print('False')

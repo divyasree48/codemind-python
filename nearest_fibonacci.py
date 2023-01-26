@@ -1,23 +1,28 @@
-def fun(n):
-    a=0
-    b=1
-    c=a+b
-    i=3
-    arr=[]
-    while(c<n):
-        k=c
-        a=b
-        b=c
-        c=a+b
-    arr.append(k)
-    arr.append(c)
-    return arr
+def fun(a):
+    i=0
+    j=1
+    while(1):
+        k=i+j
+        i=j
+        j=k
+        if k<a:
+            min=k
+        if k>a:
+            max=k
+            break
+    if max>a:
+        x=max-a
+    else:
+        x=a-max
+    if min>a:
+        y=min-a
+    else:
+        y=a-min
+    if x==y:
+        print(min,max)
+    elif x<y:
+        print(max)
+    else:
+        print(min)
 n=int(input())
-p=[]
-p=fun(n)
-if (n-p[0]==p[1]-n):
-    print(p[0],p[1])
-elif (n-p[0]>p[1]-n):
-    print(p[1])
-else:
-    print(p[0])
+fun(n)

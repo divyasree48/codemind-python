@@ -1,8 +1,10 @@
-a=int(input())
-b=int(str(a)[::-1])
-c=str(a*a)
-d=str(b*b)
-if c==d[::-1]:
+n=int(input())
+a=n
+b=str(n*n)
+d=str(n)[::-1]
+e=int(d)*int(d)
+c=str(e)[::-1]
+if b==c:
     print('True')
 else:
     print('False')

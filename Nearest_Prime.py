@@ -21,4 +21,3 @@ while(t):
             p=b[i]
     print(p)
     t-=1
-    

@@ -1,0 +1,9 @@
+n=int(input())
+a=str(n)
+b=a[3::]
+c=a[:3:]
+#print(c)
+#print(b)
+d=b[::-1]
+e=c+d
+print(e)
